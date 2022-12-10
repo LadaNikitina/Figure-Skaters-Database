@@ -99,4 +99,4 @@ CREATE TABLE figure_skating.performance_X_element (
  CONSTRAINT performance_X_element_performance FOREIGN KEY(prf_id) REFERENCES figure_skating.performance(prf_id),
  CONSTRAINT performance_X_element_element FOREIGN KEY(elm_id, elm_st_date)
      REFERENCES figure_skating.element(elm_id, elm_st_date)
-)
+);
