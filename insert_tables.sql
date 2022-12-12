@@ -52,13 +52,13 @@ INSERT INTO figure_skating.competition(cmp_id, cmp_fdr, cmp_city, cmp_date, cmp_
 -- заполним таблицу element
 INSERT INTO figure_skating.element(elm_id, elm_st_date, elm_end_date, elm_is_act,
                                    elm_is_del, elm_name, elm_level, elm_cost)
-                            VALUES(1, '2022-09-01', '9999-12-31', True, False, 'Лутц', 4, 10.71);
+                            VALUES(1, '2022-09-02', '9999-12-31', True, False, 'Лутц', 4, 10.71);
 INSERT INTO figure_skating.element(elm_id, elm_st_date, elm_end_date, elm_is_act,
                                    elm_is_del, elm_name, elm_level, elm_cost)
                             VALUES(1, '2019-05-31', '2022-09-01', False, True, 'Лутц', 4, 11.54);
 INSERT INTO figure_skating.element(elm_id, elm_st_date, elm_end_date, elm_is_act,
                                    elm_is_del, elm_name, elm_level, elm_cost)
-                            VALUES(2, '2022-01-05', '9999-12-31', True, False, 'Флип', 4, 10.36);
+                            VALUES(2, '2022-01-06', '9999-12-31', True, False, 'Флип', 4, 10.36);
 INSERT INTO figure_skating.element(elm_id, elm_st_date, elm_end_date, elm_is_act,
                                    elm_is_del, elm_name, elm_level, elm_cost)
                             VALUES(2, '2017-04-26', '2022-01-05', False, True, 'Флип', 4, 9.89);
@@ -116,7 +116,7 @@ INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VA
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(4, 3, '2016-03-11');
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(3, 5, '2019-07-20');
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(3, 6, '2011-02-01');
-INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(3, 2, '2022-01-05');
+INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(3, 2, '2022-01-06');
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(3, 1, '2019-05-31');
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(2, 5, '2019-07-20');
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(2, 6, '2011-02-01');
