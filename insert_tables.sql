@@ -46,7 +46,7 @@ INSERT INTO figure_skating.competition(cmp_id, cmp_fdr, cmp_city, cmp_date, cmp_
 INSERT INTO figure_skating.competition(cmp_id, cmp_fdr, cmp_city, cmp_date, cmp_isu)
                                 VALUES(4, 1, 'Сочи', '2021-12-26', True);
 INSERT INTO figure_skating.competition(cmp_id, cmp_fdr, cmp_city, cmp_date, cmp_isu)
-                                VALUES(5, 5, 'Рим', '2022-11-12', False);
+                                VALUES(5, 5, 'Рим', '2022-01-12', False);
 
 
 -- заполним таблицу element
@@ -79,17 +79,21 @@ INSERT INTO figure_skating.element(elm_id, elm_st_date, elm_end_date, elm_is_act
 INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
                                 VALUES(1, 1, 1, 39.56, False, 1);
 INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
-                                VALUES(2, 2, 2, 52.25, True, 4);
+                                VALUES(2, 3, 2, 52.25, True, 4);
 INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
                                 VALUES(3, 1, 4, 56.91, False, 1);
 INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
-                                VALUES(4, 3, 4, 51.88, True, 2);
+                                VALUES(4, 2, 4, 51.88, True, 2);
 INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
                                 VALUES(5, 4, 1, 36.19, True, 2);
 INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
                                 VALUES(6, 4, 3, 12.53, True, 7);
 INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
-                                VALUES(7, 5, 5, 18.58, True, 9);
+                                VALUES(7, 3, 5, 18.58, True, 9);
+INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
+                                VALUES(8, 5, 3, 17.44, False, 3);
+INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
+                                VALUES(9, 4, 5, 30.11, True, 6);
 
 -- заполним таблицу judge_X_competition
 INSERT INTO figure_skating.judge_x_competition(jdg_id, cmp_id) VALUES(5, 1);
@@ -104,6 +108,11 @@ INSERT INTO figure_skating.judge_x_competition(jdg_id, cmp_id) VALUES(2, 5);
 INSERT INTO figure_skating.judge_x_competition(jdg_id, cmp_id) VALUES(6, 5);
 
 -- заполним таблицу performance_X_element
+INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(9, 5, '2019-07-20');
+INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(9, 4, '2017-12-09');
+INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(9, 6, '2011-02-01');
+INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(8, 5, '2019-07-20');
+INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(8, 6, '2011-02-01');
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(7, 5, '2019-07-20');
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(7, 6, '2011-02-01');
 INSERT INTO figure_skating.performance_x_element(prf_id, elm_id, elm_st_date) VALUES(6, 5, '2019-07-20');
