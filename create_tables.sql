@@ -78,7 +78,8 @@ CREATE TABLE figure_skating.performance (
  CONSTRAINT performance_id PRIMARY KEY(prf_id),
  CONSTRAINT performance_comp FOREIGN KEY(prf_comp) REFERENCES figure_skating.competition(cmp_id),
  CONSTRAINT performance_fig FOREIGN KEY(prf_fig) REFERENCES figure_skating.figure_skater(fig_id),
- CONSTRAINT performance_points CHECK(prf_points > 0)
+ CONSTRAINT performance_points CHECK(prf_points > 0),
+ CONSTRAINT performance_unique UNIQUE (prf_comp, prf_fig)
 );
 
 -- create table judge_X_competition
