@@ -8,7 +8,7 @@ UPDATE figure_skating.element SET elm_name = 'Сальхов', elm_cost = 8.34 W
 
 -- запросы для таблицы с выступлениями
 INSERT INTO figure_skating.performance(prf_id, prf_comp, prf_fig, prf_points, prf_ded, prf_place)
-                                VALUES(8, 1, 3, 20.31, True, 4);
-DELETE FROM figure_skating.performance WHERE prf_id = 8;
+                                VALUES(10, 1, 3, 20.31, True, 4);
+DELETE FROM figure_skating.performance WHERE prf_id = 10;
 SELECT prf_comp, prf_fig, prf_points FROM figure_skating.performance WHERE prf_points > 40.0;
 UPDATE figure_skating.performance SET prf_points = 52.05 WHERE prf_id = 4;
